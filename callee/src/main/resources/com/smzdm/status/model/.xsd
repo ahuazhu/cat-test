@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+   <xs:element name="" type=""/>
+   <xs:complexType name="RuntimeType">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="start-time" type="xs:long"/>
+            <xs:attribute name="up-time" type="xs:long"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+</xs:schema>

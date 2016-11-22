@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+   <xs:element name="status" type="StatusType"/>
+   <xs:complexType name="StatusType">
+      <xs:sequence>
+         <xs:element name="runtime" type="RuntimeType" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="timestamp" type="xs:string"/>
+   </xs:complexType>
+   <xs:complexType name="RuntimeType">
+      <xs:sequence>
+         <xs:element name="user-dir" type="xs:string" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="java-classpath" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="start-time" type="xs:long"/>
+      <xs:attribute name="up-time" type="xs:long"/>
+      <xs:attribute name="java-version" type="xs:string"/>
+      <xs:attribute name="user-name" type="xs:string"/>
+   </xs:complexType>
+</xs:schema>

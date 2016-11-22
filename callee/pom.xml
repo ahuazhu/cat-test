@@ -19,45 +19,4 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.unidal.maven.plugins</groupId>
-                <artifactId>codegen-maven-plugin</artifactId>
-                <version>2.3.2</version>
-                <executions>
-                    <execution>
-                        <id>generate data model</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>dal-model</goal>
-                        </goals>
-                        <configuration>
-                            <manifest>
-                                ${basedir}/src/main/resources/META-INF/model/test-manifest.xml,
-                            </manifest>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.unidal.maven.plugins</groupId>
-                <artifactId>plexus-maven-plugin</artifactId>
-                <version>2.2.0</version>
-                <executions>
-                    <execution>
-                        <id>generate plexus component descriptor</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>plexus</goal>
-                        </goals>
-                        <configuration>
-                            <className>com.dianping.cat.build.ComponentsConfigurator</className>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>

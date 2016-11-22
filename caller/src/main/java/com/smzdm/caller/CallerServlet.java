@@ -1,7 +1,5 @@
 package com.smzdm.caller;
 
-import com.dianping.cat.Cat;
-import com.smzdm.cat.Context;
 import com.smzdm.commons.rpc.entity.HttpResult;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
